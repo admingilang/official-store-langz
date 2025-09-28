@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRODUK GILANG-OFFICIAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+      margin: 0;
+      padding: 40px 20px;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #ffffffdd;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #34495e;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+    }
+
+    /* Banner Carousel */
+    .banner-carousel {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 50px;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .banner-slide {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      transition: opacity 0.6s ease-in-out;
+      animation: colorCycle 10s infinite;
+    }
+
+    .banner-slide.active {
+      opacity: 1;
+    }
+
+    @keyframes colorCycle {
+      0% { color: #ff4d4d; }
+      25% { color: #ffa64d; }
+      50% { color: #4dff88; }
+      75% { color: #4dc3ff; }
+      100% { color: #bf4dff; }
+    }
+
+    .file-group {
+      margin-bottom: 50px;
+    }
+
+    .file-group h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      color: #5d6d7e;
+      border-left: 6px solid #764ba2;
+      padding-left: 15px;
+      font-weight: 600;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(118, 75, 162, 0.15);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 10px 30px rgba(118, 75, 162, 0.25);
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 180px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-card a {
+      color: #764ba2;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .product-card a:hover {
+      text-decoration: underline;
+    }
+
+    .desc {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #95a5a6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>GILANG-OFFICIAL</h1>
+      <p>SILAHKAN PILIH PRODUK YANG INGIN KAMU BELI</p>
+
+      <!-- Banner Slideshow di bawah teks -->
+      <div class="banner-carousel">
+        <div class="banner-slide active">🔥 PROMO BESAR-BESARAN SELAMA 1BULAN🔥</div>
+        <div class="banner-slide">⏱️ SERVER BOT AKTIF 24 JAM ⏱️</div>
+        <div class="banner-slide">✅ GRATIS SUPPORT SEUMUR HIDUP ✅</div>
+      </div>
+    </header>
+
+    <!-- Grup 1 -->
+    <div class="file-group">
+      <h2>KEBUTUHAN HOSTING</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://files.catbox.moe/goh5tu.jpg" alt="PANEL PTERODACTYL">
+          <a href="https://wa.me/6283175307223" target="_blank">PANEL PTERODACTYL</a>
+          <div class="desc">WEB YANG BISA MEMBUAT BOT BERJALAN</div>
+        </div>
+        <div class="product-card">
+          <img src="https://files.catbox.moe/goh5tu.jpg" alt="ADMIN PANEL">
+          <a href="https://wa.me/6283175307223" target="_blank">ADMIN PANEL</a>
+          <div class="desc">SEBAGAI ADMIN PANEL DI WEB PTERODACTYL</div>
+        </div>
+        <div class="product-card">
+          <img src="https://files.catbox.moe/goh5tu.jpg" alt="OWNER PANEL">
+          <a href="https://wa.me/6283175307223" target="_blank">OWNER PANEL</a>
+          <div class="desc">MENJADI SETENGAH PEMILIK WEB PTERODACTYL</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grup 2 -->
+    <div class="file-group">
+      <h2>SCRIPT BOT WHATSAPP/TELEGRAM</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://files.catbox.moe/wvtxbq.jpg" alt="SHIRO CPANELV1">
+          <a href="https://wa.me/6283175307223" target="_blank">SCRIPT CPANEL</a>
+          <div class="desc">MEMBANTU DALAM MENGURUS SERVER PTERODACTYL</div>
+        </div>
+        <div class="product-card">
+          <img src="https://files.catbox.moe/wvtxbq.jpg" alt="MECHABOT V1">
+          <a href="https://wa.me/6283175307223" target="_blank">SCRIPT JPMCH</a>
+          <div class="desc">UNTUK MENYEBARKAN TEKS KE SALURAN TERTENTU</div>
+        </div>
+        <div class="product-card">
+          <img src="https://files.catbox.moe/wvtxbq.jpg" alt="SKYLANGZ V1">
+          <a href="https://wa.me/6283175307223" target="_blank">SCRIPT BUG VIA TELEGRAM</a>
+          <div class="desc">MENGIRIMKAN BUG/VIRUS KE NOMOR YG DITENTUKAN</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; GILANG-OFFICIAL [DILARANG MENIRU]
+    </footer>
+  </div>
+
+  <script>
+    // Script rotasi banner otomatis
+    let current = 0;
+    const slides = document.querySelectorAll(".banner-slide");
+
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current
